@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in {{ weather.city }}</title>
+</head>
+<body>
+    <h1>Weather Report for {{ weather.city }}, {{ weather.country }}</h1>
+    <ul>
+        <li><strong>Temperature:</strong> {{ weather.temperature }} °C</li>
+        <li><strong>Feels Like:</strong> {{ weather.feels_like }} °C</li>
+        <li><strong>Description:</strong> {{ weather.weather_description }}</li>
+        <li><strong>Humidity:</strong> {{ weather.humidity }}%</li>
+        <li><strong>Pressure:</strong> {{ weather.pressure }} hPa</li>
+        <li><strong>Wind Speed:</strong> {{ weather.wind_speed }} m/s</li>
+    </ul>
+    <a href="/">Check another city</a>
+</body>
+</html>
+
